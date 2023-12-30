@@ -38,7 +38,7 @@ export default function Home() {
             </nav>
             {/* HERO SECTION  */}
             <section className="w-[90%] p-5 flex md:flex-row flex-col items-center justify-evenly mb-14"> 
-              <Image src={heroImage} alt="Hero" className="md:w-[40%] w-[100%] outline outline-offset-8 outline-white outline-2 rounded-xl mb-7"/>
+              <Image src={heroImage} alt="Hero" className="md:w-[40%] w-[100%] rounded-xl mb-7"/>
               <div className="md:w-[50%] w-[90%] text-right flex flex-col md:gap-10 justify-center ">
                 
                 <div className="flex flex-col items-end md:text-3xl md:gap-6 text-2xl">
