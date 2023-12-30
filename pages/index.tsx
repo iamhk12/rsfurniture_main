@@ -4,7 +4,10 @@ import card1Image from "@/public/card1.webp"
 import card2Image from "@/public/card2.webp"
 import card3Image from "@/public/card3.webp"
 import { AiOutlineHome } from "react-icons/ai";
+import { useRouter } from "next/router"
+
 export default function Home() {
+  const router = useRouter()
   return (
     <>
       <div className="h-full w-full absolute">
@@ -14,8 +17,8 @@ export default function Home() {
               <h1 className="md:text-2xl md:text-[1.5rem] text-xl mb-5 font-medium logoCss text-center">R S FURNITURE</h1>
               <div className="flex flow-row md:justify-evenly justify-between md:w-5/12 w-full text-xl"> 
                 <button className="bn9"><span> Home</span></button>
-                <button>Services</button>
-                <button>About</button>
+                <button onClick={()=> router.push('/services')}> Services</button>
+                <button onClick={()=> router.push('/contact')}> Contact Us</button>
               </div>
             </nav>
             {/* HERO SECTION  */}
@@ -36,8 +39,8 @@ export default function Home() {
             </section>
             
             {/* EXPERIENCE SECTION  */}
-            <h1 className="fontSofia text-left md:w-[80%] w-[90%] text-[60px]"> EXPERIENCE </h1>
-            <section className="w-[90%] p-5 flex md:flex-row flex-col items-center justify-evenly"> 
+            <h1 className="fontSofia text-left md:w-[80%] w-[90%] text-[40px]"> EXPERIENCE . . . </h1>
+            <section className="w-[90%] p-5 flex md:flex-row flex-col items-center justify-evenly mb-24"> 
               
               <div className="card bg-white shadow-md p-4 rounded-lg mb-4 md:w-[27%] w-full flex flex-col ">
                 <div className="relative w-[100%] h-64 mb-4 rounded-lg overflow-hidden">
@@ -66,6 +69,13 @@ export default function Home() {
                   <p className="text-gray-600">Experience comfort with our thoughtfully designed furniture pieces.</p>
                 {/* </div> */}
               </div>
+            </section>
+
+            {/*ABOUT Section*/}
+            <h1 className="fontSofia text-right md:w-[80%] w-[90%] text-[43px]">. . . ABOUT US </h1>
+            <section className="w-[90%] p-5 flex md:flex-row flex-col items-center justify-evenly"> 
+              
+            
             </section>
 
             <div className="fixed w-full bottom-0 h-40 fixedTransparentGradient"></div>
