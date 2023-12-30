@@ -1,13 +1,15 @@
 import Image from "next/image"
-import heroImage from "@/public/heroimage.avif"
-import card1Image from "@/public/card1.png"
+import heroImage from "@/public/heroimage.webp"
+import card1Image from "@/public/card1.webp"
+import card2Image from "@/public/card2.webp"
+import card3Image from "@/public/card3.webp"
 import { AiOutlineHome } from "react-icons/ai";
 export default function Home() {
   return (
     <>
       <div className="h-full w-full absolute">
         <div className="md:p-10 p-4 w-full h-full fixed">
-          <div className="border-[1px] shadow-slate-200  border-white w-full h-full rounded-none overflow-y-auto overflow-x-hidden  flex flex-col items-center relative pb-10">
+          <div className="border-[1px] shadow-slate-200  border-white w-full h-full rounded-none overflow-y-auto overflow-x-hidden  flex flex-col items-center relative pb-56">
             <nav className="flex justify-between p-4 md:flex-row flex-col md:w-[80%] w-[90%] mb-12 mt-4">
               <h1 className="md:text-2xl md:text-[1.5rem] text-xl mb-5 font-medium logoCss text-center">R S FURNITURE</h1>
               <div className="flex flow-row md:justify-evenly justify-between md:w-5/12 w-full text-xl"> 
@@ -33,8 +35,8 @@ export default function Home() {
               </div>
             </section>
             
-            {/* SERVICES SECTION  */}
-            <h1 className="fontGreatVibes text-left md:w-[80%] w-[90%] text-[60px]"> Services</h1>
+            {/* EXPERIENCE SECTION  */}
+            <h1 className="fontSofia text-left md:w-[80%] w-[90%] text-[60px]"> EXPERIENCE </h1>
             <section className="w-[90%] p-5 flex md:flex-row flex-col items-center justify-evenly"> 
               
               <div className="card bg-white shadow-md p-4 rounded-lg mb-4 md:w-[27%] w-full flex flex-col ">
@@ -48,7 +50,7 @@ export default function Home() {
               </div>
               <div className="card bg-white shadow-md p-4 rounded-lg mb-4 md:w-[27%] w-full flex flex-col ">
                 <div className="relative w-[100%] h-64 mb-4 rounded-lg overflow-hidden">
-                  <Image src={heroImage} alt="Card Image" layout="fill" objectFit="cover" />
+                  <Image src={card2Image} alt="Card Image" layout="fill" objectFit="cover" />
                 </div>
                 {/* <div className="max-w-44"> */}
                   <h2 className="text-xl font-semibold mb-2 text-black"> Affordable Solutions</h2>
@@ -57,7 +59,7 @@ export default function Home() {
               </div>
               <div className="card bg-white shadow-md p-4 rounded-lg mb-4 md:w-[27%] w-full flex flex-col ">
                 <div className="relative w-[100%] h-64 mb-4 rounded-lg overflow-hidden">
-                  <Image src={heroImage} alt="Card Image" layout="fill" objectFit="cover" />
+                  <Image src={card3Image} alt="Card Image" layout="fill" objectFit="cover" />
                 </div>
                 {/* <div className="max-w-44"> */}
                   <h2 className="text-xl font-semibold mb-2 text-black"> Comfortable Designs</h2>
