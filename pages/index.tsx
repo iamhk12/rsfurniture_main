@@ -18,8 +18,8 @@ export default function Home() {
   })
 
   const scrollToTop = () => {
-    if (scrollContainerRef.current as any) {
-      scrollContainerRef?.current?.scrollIntoView({ behavior: 'smooth' });
+    if (scrollContainerRef.current) {
+      (scrollContainerRef.current as HTMLElement).scrollIntoView({ behavior: 'smooth' });
     }
   };
   return (
