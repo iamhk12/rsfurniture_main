@@ -14,11 +14,11 @@ export default function Home() {
         <div className="md:p-10 p-4 w-full h-full fixed">
           <div className="border-[1px] shadow-slate-200  border-white w-full h-full rounded-none overflow-y-auto overflow-x-hidden  flex flex-col items-center relative pb-56">
             <nav className="flex justify-between p-4 md:flex-row flex-col md:w-[80%] w-[90%] mb-12 mt-4">
-              <h1 className="md:text-2xl md:text-[1.5rem] text-xl mb-5 font-medium logoCss text-center">R S FURNITURE</h1>
-              <div className="flex flow-row md:justify-evenly justify-between md:w-5/12 w-full text-xl"> 
-                <button className="bn9"><span> Home</span></button>
-                <button onClick={()=> router.push('/services')}> Services</button>
-                <button onClick={()=> router.push('/contact')}> Contact Us</button>
+              <h1 className="md:text-2xl md:text-[1.5rem] text-3xl mb-5 font-medium logoCss text-center">R S FURNITURE</h1>
+              <div className="flex flow-row md:justify-evenly justify-between md:w-5/12 w-full md:text-xl text-base"> 
+                <button className="bn9"><span> Home</span></button> | 
+                <button onClick={()=> router.push('/services')}> Services</button> | 
+                <button onClick={()=> router.push('/contact')}> Contact Us</button> 
               </div>
             </nav>
             {/* HERO SECTION  */}
@@ -39,7 +39,7 @@ export default function Home() {
             </section>
             
             {/* EXPERIENCE SECTION  */}
-            <h1 className="fontSofia text-left md:w-[80%] w-[90%] text-[40px]"> EXPERIENCE . . . </h1>
+            <h1 className="fontSofia text-left w-[80%] md:text-[40px] text-2xl"> EXPERIENCE . . . </h1>
             <section className="w-[90%] p-5 flex md:flex-row flex-col items-center justify-evenly mb-24"> 
               
               <div className="card bg-white shadow-md p-4 rounded-lg mb-4 md:w-[27%] w-full flex flex-col ">
@@ -72,7 +72,7 @@ export default function Home() {
             </section>
 
             {/*ABOUT Section*/}
-            <h1 className="fontSofia text-right md:w-[80%] w-[90%] text-[43px]">. . . ABOUT US </h1>
+            <h1 className="fontSofia text-right w-[80%] md:text-[43px] text-2xl">. . . ABOUT US </h1>
             <section className="w-[90%] p-5 flex md:flex-row flex-col items-center justify-evenly"> 
               
             
