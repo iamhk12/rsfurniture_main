@@ -11,7 +11,7 @@ import { IoIosArrowUp } from "react-icons/io";
 
 export default function Home() {
   const router = useRouter()
-  const scrollContainerRef = useRef(null);
+  const scrollContainerRef = useRef<HTMLElement>(null);
 
   useEffect(()=>{
     document.title = "R. S. Furniture"
@@ -19,7 +19,7 @@ export default function Home() {
 
   const scrollToTop = () => {
     if (scrollContainerRef.current) {
-      (scrollContainerRef.current as HTMLElement).scrollIntoView({ behavior: 'smooth' });
+      scrollContainerRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
   return (
