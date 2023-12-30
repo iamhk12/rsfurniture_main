@@ -33,6 +33,7 @@ body {
 .fixedTransparentGradient{
   background: linear-gradient(#00000000, #000);
   pointer-events: none;
+  z-index: 23;
 }
 
 /* for all PCs  */
