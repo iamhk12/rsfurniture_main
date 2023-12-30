@@ -10,7 +10,7 @@ export default function Services() {
           <div className="border-[1px] shadow-slate-200  border-white w-full h-full rounded-none overflow-y-auto overflow-x-hidden  flex flex-col items-center relative pb-56">
             <nav className="flex justify-between p-4 md:flex-row flex-col md:w-[80%] w-[90%] mb-12 mt-4">
             <h1 className="md:text-2xl md:text-[1.5rem] text-3xl mb-5 font-medium logoCss text-center">R S FURNITURE</h1>
-              <div className="flex flow-row md:justify-evenly justify-between md:w-5/12 w-full md:text-xl text-base"> 
+            <div className="flex flow-row md:justify-evenly justify-between items-center md:w-5/12 w-full md:text-xl text-base"> 
                 <button onClick={()=> router.push('/')}>Home</button> |
                 <button className="bn9"><span> Services</span></button> | 
                 <button onClick={()=> router.push('/contact')}>Contact us</button>
