@@ -26,7 +26,7 @@ export default function Home() {
     <>
       <div className="h-full w-full absolute ">
         <div className="md:p-10 p-4 w-full h-full fixed">
-          <div className="border-[1px] shadow-slate-200  border-white w-full h-full rounded-none overflow-y-auto overflow-x-hidden  flex flex-col items-center relative pb-14" id="ScrollContainer">
+          <div className="border-[1px] shadow-slate-200  border-white w-full h-full rounded-none overflow-y-auto overflow-x-hidden  flex flex-col items-center relative pb-5" id="ScrollContainer">
             <span ref={scrollContainerRef} ></span>
             <nav className="flex justify-between p-4 md:flex-row flex-col md:w-[80%] w-[90%] mb-12 mt-4" >
               <h1 className="md:text-2xl md:text-[1.5rem] text-3xl mb-5 font-medium logoCss text-center border-y-2 border-y-gray-600 py-1">R S FURNITURE</h1>
