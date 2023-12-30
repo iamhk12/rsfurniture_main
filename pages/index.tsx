@@ -26,9 +26,9 @@ export default function Home() {
               <Image src={heroImage} alt="Hero" className="md:w-[40%] w-[100%] outline outline-offset-8 outline-white outline-2 rounded-xl mb-7"/>
               <div className="md:w-[50%] w-[90%] text-right flex flex-col md:gap-10 justify-center ">
                 
-                <div className="flex flex-col items-end md:text-[50px] md:gap-6 text-2xl">
+                <div className="flex flex-col items-end md:text-3xl md:gap-6 text-2xl">
                   <AiOutlineHome/>
-                  <h1 className=" text-['Baloo Bhai 2']">
+                  <h1 className=" text-['Baloo Bhai 2'] ">
                     Discover Timeless Elegance
                   </h1>
                 </div>
