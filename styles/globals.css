@@ -3,34 +3,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 /* Add this CSS to your stylesheet */
 *::-webkit-scrollbar {
-  width: 5px; /* Adjust the width of the scrollbar as needed */
+  width: 5px;
+  /* Adjust the width of the scrollbar as needed */
 }
 
 *::-webkit-scrollbar-track {
-  background-color: #000; /* Black background for the scrollbar track */
+  background-color: #000;
+  /* Black background for the scrollbar track */
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #fff; /* White color for the scrollbar thumb */
+  background-color: #fff;
+  /* White color for the scrollbar thumb */
 }
 
-.fontSofia{
+.fontSofia {
   font-family: 'Sofia', cursive;
 }
 
 body {
   background: #000000;
   color: white;
-  font-family: 'Montserrat' ,sans-serif;;
+  font-family: 'Montserrat', sans-serif;
+  ;
 }
 
-.logoCss{
+.logoCss {
   font-family: 'Crimson Pro', serif
 }
 
-.fixedTransparentGradient{
+.fixedTransparentGradient {
   background: linear-gradient(#00000000, #000);
   pointer-events: none;
   z-index: 23;
@@ -42,24 +47,22 @@ body {
     padding: 2px;
     outline: 0;
     /* font-size: 17px; */
-    background: linear-gradient(
-      to right,
-      #fdde5c,
-      #f8ab5e,
-      #f56a62,
-      #a176c8,
-      #759beb,
-      #65beb3,
-      #70db96
-    );
+    background: linear-gradient(to right,
+        #fdde5c,
+        #f8ab5e,
+        #f56a62,
+        #a176c8,
+        #759beb,
+        #65beb3,
+        #70db96);
     border-radius: 30px;
     border: 0;
     box-shadow: none;
     cursor: pointer;
   }
-  
-  
-  .bn9 > span {
+
+
+  .bn9>span {
     display: block;
     padding: 10px 40px;
     /* font-size: 17px; */
