@@ -38,11 +38,12 @@ export default function Services() {
                 R S FURNITURE
               </h1>
               <div className="flex flow-row lg:justify-evenly justify-between items-center lg:w-5/12 w-full lg:text-xl text-base">
-                <button onClick={() => router.push("/")}>Home</button> |
+                <button onClick={() => router.push("/")}>Home</button> 
+                <span className="lg:hidden">|</span>
                 <button className="bn9">
                   <span> Services</span>
                 </button>{" "}
-                |
+                <span className="lg:hidden">|</span>
                 <button onClick={() => router.push("/contact")}>
                   Contact us
                 </button>

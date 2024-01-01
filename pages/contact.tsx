@@ -14,8 +14,10 @@ export default function Contact() {
                 R S FURNITURE
               </h1>
               <div className="flex flow-row lg:justify-evenly justify-between items-center lg:w-5/12 w-full lg:text-xl text-base">
-                <button onClick={() => router.push("/")}>Home</button> |
-                <button onClick={() => router.push("/services")}>Services</button> |
+                <button onClick={() => router.push("/")}>Home</button> 
+                <span className="lg:hidden">|</span>
+                <button onClick={() => router.push("/services")}>Services</button> 
+                <span className="lg:hidden">|</span>
                 <button className="bn9">
                   <span> Contact us</span>
                 </button>
