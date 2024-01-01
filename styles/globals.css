@@ -20,6 +20,7 @@
   /* White color for the scrollbar thumb */
 }
 
+
 .fontSofia {
   font-family: 'Sofia', cursive;
 }
@@ -30,6 +31,19 @@ body {
   font-family: 'Montserrat', sans-serif;
   ;
 }
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.8s ease-in-out;
+}
+
+/* Fade-out animation */
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+
 
 .logoCss {
   font-family: 'Crimson Pro', serif
@@ -42,7 +56,25 @@ body {
 }
 
 /* for all PCs  */
-@media screen and (min-width : 768px) {
+@media screen and (max-width : 1024px) {
+  .bn9{
+    position: relative;
+  }
+
+  .bn9::after{
+    content: '';
+    position: absolute;
+    height: 5.2px;
+    width: 26px;
+    background: #37a2ff;
+    bottom: -12px;
+    right: 0;
+    border-radius: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+}
+@media screen and (min-width : 1024px) {
   .bn9 {
     padding: 2px;
     outline: 0;
