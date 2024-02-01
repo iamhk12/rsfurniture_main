@@ -43,8 +43,8 @@ const Projects_Component = () => {
       {!selectedSite && 
         <div className="lg:w-[80%] w-[90%] max-w-full">
           <div className="text-center mb-8">
-            <h1 className="lg:text-4xl text-2xl font-bold text-gray-800">{selectedSite ? selectedSite?.name : "Explore Projects"}</h1>
-            <p className="text-gray-600">Discover amazing projects in different locations.</p>
+            <h1 className="lg:text-4xl text-2xl font-bold text-gray-800 mb-3">{selectedSite ? selectedSite?.name : "Explore Projects"}</h1>
+            <p style={{color : "#8c97ad"}}>Discover amazing projects in different locations.</p>
           </div>
           <div className="mb-4">
             <input
