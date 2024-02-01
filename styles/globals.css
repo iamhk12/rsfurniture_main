@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  box-sizing: border-box;
+}
+
 /* Add this CSS to your stylesheet */
 *::-webkit-scrollbar {
   width: 5px;
@@ -64,10 +68,10 @@ body {
   .bn9::after{
     content: '';
     position: absolute;
-    height: 5.2px;
-    width: 26px;
+    height: 4px;
+    width: 16px;
     background: #37a2ff;
-    bottom: -12px;
+    bottom: -8px;
     right: 0;
     border-radius: 20px;
     left: 50%;

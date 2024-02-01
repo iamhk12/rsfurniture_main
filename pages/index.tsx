@@ -31,35 +31,41 @@ export default function Home() {
   return (
     <>
       <div className="h-full w-full absolute ">
-      {/* <div className={ `lg:p-10 p-4 w-full h-full fixed opacity-0 ${fadeIn ? "fade-in" : ""}`}> */}
+        {/* <div className={ `lg:p-10 p-4 w-full h-full fixed opacity-0 ${fadeIn ? "fade-in" : ""}`}> */}
         <div className="lg:p-10 p-4 w-full h-full fixed">
           <div
             className="border-[1px] shadow-slate-200  border-white w-full h-full rounded-none overflow-y-auto overflow-x-hidden  flex flex-col items-center relative"
             id="ScrollContainer"
           >
             <span ref={scrollContainerRef}></span>
-            <nav className={`flex justify-between p-4 lg:flex-row flex-col lg:w-[80%] w-[90%] mb-12 mt-4 `}>
+            <nav
+              className={`flex justify-between p-4 lg:flex-row flex-col lg:w-[80%] w-[96%] mb-12 lg:mb-16 mt-4 `}
+            >
               <h1 className="lg:text-2xl lg:text-[1.5rem] text-3xl mb-5 font-medium logoCss text-center border-y-2 border-y-gray-600 py-1">
                 R S FURNITURE
               </h1>
-              <div className="flex flow-row lg:justify-evenly justify-between items-center lg:w-5/12 w-full lg:text-xl text-base">
+              <div className="flex flex-row lg:justify-evenly justify-between items-center lg:w-7/12 w-full lg:text-xl text-sm">
                 <button className="bn9">
                   <span> Home</span>
-                </button>{" "}
-                <span className="lg:hidden">|</span>
+                </button>
+
+                <button onClick={() => router.push("/projects")}>
+                  Projects
+                </button>
+                
                 <button onClick={() => router.push("/services")}>
-                  {" "}
                   Services
-                </button>{" "}
-                <span className="lg:hidden">|</span>
+                </button>
+
                 <button onClick={() => router.push("/contact")}>
-                  {" "}
                   Contact Us
                 </button>
               </div>
             </nav>
             {/* HERO SECTION  */}
-            <section className={`w-[90%] p-5 flex lg:flex-row flex-col items-center justify-evenly `}>
+            <section
+              className={`w-[90%] p-5 flex lg:flex-row flex-col items-center justify-evenly `}
+            >
               <Image
                 src={heroImage}
                 alt="Hero"
@@ -78,21 +84,23 @@ export default function Home() {
               </div>
             </section>
 
-            <button onClick={()=>router.push("/services")} className="border-2 max-w-[90%] text-base border-white my-10 rounded-full p-5 font-medium px-10 hover:bg-white hover:text-black transition-all hover:shadow-[10px_0px_120px_rgba(25,171,255,0.8)]">
+            <button
+              onClick={() => router.push("/services")}
+              className="border-2 max-w-[90%] text-base border-white my-10 rounded-full p-5 font-medium px-10 hover:bg-white hover:text-black transition-all hover:shadow-[10px_0px_120px_rgba(25,171,255,0.8)]"
+            >
               <span className="flex flex-row items-center gap-4">
                 <span className="text-left text-pretty">
                   Check out the services we provide
-                </span>{" "}
+                </span>
                 <span>
                   <AiOutlineArrowRight />
-                </span>{" "}
+                </span>
               </span>
             </button>
 
             {/* EXPERIENCE SECTION  */}
             <h1 className="font-[Poppins] text-left lg:w-[85%] w-[90%] lg:text-[40px] text-4xl lg:mb-14 mt-10">
-              {" "}
-              EXPERIENCE . . .{" "}
+              EXPERIENCE . . .
             </h1>
             <section className="w-[100%] p-5 flex lg:flex-row flex-col  items-center justify-evenly">
               <div className="card bg-white shadow-md p-4 rounded-lg mb-4 lg:w-[27%] w-full flex flex-col lg:hover:scale-110 transition-all">
@@ -125,7 +133,6 @@ export default function Home() {
                 </div>
                 {/* <div className="max-w-44"> */}
                 <h2 className="text-xl font-semibold mb-2 text-black">
-                  {" "}
                   Affordable Solutions
                 </h2>
                 <p className="text-gray-600">
@@ -145,7 +152,6 @@ export default function Home() {
                 </div>
                 {/* <div className="max-w-44"> */}
                 <h2 className="text-xl font-semibold mb-2 text-black">
-                  {" "}
                   Comfortable Designs
                 </h2>
                 <p className="text-gray-600">
@@ -155,20 +161,24 @@ export default function Home() {
                 {/* </div> */}
               </div>
             </section>
-            
+
             <h1 className="font-[Poppins] text-center w-[90%] lg:text-[43px]  font-bold text-3xl my-14">
-              ABOUT US{" "}
+              ABOUT US
             </h1>
             <section className="w-full p-5 flex lg:flex-row flex-col items-center justify-evenly text-center">
               <div className="lg:w-[30%] w-[90%] text-white mb-10">
                 <h2 className="lg:text-4xl text-2xl lg:font-bold font-semibold mb-3 text-rose-300 leading-tight">
-                  Stories 
+                  Stories
                 </h2>
                 <p className="text-gray-400 leading-loose">
                   Welcome to R. S. Furniture, where each piece whispers a unique
-                  story. Founded in year <span className="text-slate-300 font-medium">1998</span> by <span className="text-slate-300 font-medium">Ramsilan Yadav</span>, we transform spaces into living
-                  narratives, crafting artifacts that resonate with the poetry
-                  of life.
+                  story. Founded in year{" "}
+                  <span className="text-slate-300 font-medium">1998</span> by{" "}
+                  <span className="text-slate-300 font-medium">
+                    Ramsilan Yadav
+                  </span>
+                  , we transform spaces into living narratives, crafting
+                  artifacts that resonate with the poetry of life.
                 </p>
               </div>
               <div className="lg:w-[30%] w-[90%] text-white mb-10">

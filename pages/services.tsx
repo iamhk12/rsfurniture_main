@@ -33,19 +33,27 @@ export default function Services() {
             id="ScrollContainer"
           >
             <span ref={scrollContainerRef}></span>
-            <nav className="flex justify-between p-4 lg:flex-row flex-col lg:w-[80%] w-[90%] mb-12 mt-4">
+            <nav
+              className={`flex justify-between p-4 lg:flex-row flex-col lg:w-[80%] w-[96%] mb-12 mt-4 `}
+            >
               <h1 className="lg:text-2xl lg:text-[1.5rem] text-3xl mb-5 font-medium logoCss text-center border-y-2 border-y-gray-600 py-1">
                 R S FURNITURE
               </h1>
-              <div className="flex flow-row lg:justify-evenly justify-between items-center lg:w-5/12 w-full lg:text-xl text-base">
-                <button onClick={() => router.push("/")}>Home</button> 
-                <span className="lg:hidden">|</span>
+              <div className="flex flex-row lg:justify-evenly justify-between items-center lg:w-7/12 w-full lg:text-xl text-sm">
+                <button onClick={() => router.push("/")}>
+                   Home
+                </button>
+
+                <button onClick={() => router.push("/projects")}>
+                  Projects
+                </button>
+                
                 <button className="bn9">
-                  <span> Services</span>
-                </button>{" "}
-                <span className="lg:hidden">|</span>
+                  <span>Services</span>
+                </button>
+
                 <button onClick={() => router.push("/contact")}>
-                  Contact us
+                  Contact Us
                 </button>
               </div>
             </nav>
