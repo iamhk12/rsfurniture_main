@@ -107,3 +107,18 @@ body {
     border-radius: 30px;
   }
 }
+
+.skeleton {
+  background: linear-gradient(90deg, #32373cc7, #000, #32373cc7); /* Slate Gray linear gradient */
+  background-size: 200% 100%;
+  animation: moveGradient 2s linear infinite;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}

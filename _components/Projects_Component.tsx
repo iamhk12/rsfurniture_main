@@ -66,6 +66,7 @@ const Projects_Component = () => {
                       alt={site.name}
                       layout="fill"
                       objectFit="cover"
+                      className="skeleton"
                       style={{borderRadius : "3px"}}
                     />
                   </div>
@@ -102,8 +103,8 @@ const Projects_Component = () => {
                     width={300}
                     height={150}
                     layout="fixed"
-                    className="rounded-md"
-                    style={{borderRadius : "3px", outlineOffset : "3px", outline : "2px solid white", }}
+                    className="rounded-md skeleton"
+                    style={{borderRadius : "3px", outlineOffset : "3px", outline : "1px solid white", }}
 
                   />
                 </div>
