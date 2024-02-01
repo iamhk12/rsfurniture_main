@@ -29,7 +29,7 @@ export default function Projects() {
         {/* <div className={ `lg:p-10 p-4 w-full h-full fixed opacity-0 ${fadeIn ? "fade-in" : ""}`}> */}
           <div className="lg:p-10 p-4 w-full h-full fixed">
             <div
-              className="border-[1px] shadow-slate-200  border-white w-full h-full rounded-none overflow-y-auto overflow-x-hidden  flex flex-col items-center relative p-6"
+              className="border-[1px] shadow-slate-200  border-white w-full h-full rounded-none overflow-y-auto overflow-x-hidden  flex flex-col items-center relative pb-8"
               id="ScrollContainer"
             >
               <span ref={scrollContainerRef}></span>
