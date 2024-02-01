@@ -15,7 +15,7 @@ const Projects_Component = () => {
     { name: "Lodha Amara, Thane West", numberOfImages: 12 },
     { name: "Neelkanth Palms, Thane West", numberOfImages: 5 },
     { name: "Panchavati Plaza, Ghansoli", numberOfImages: 10 },
-    { name: "Parsik Nagar, Kalwa", numberOfImages: 18 },
+    { name: "Parsik nagar, Kalwa", numberOfImages: 18 },
     { name: "Tarangan complex I, Thane West", numberOfImages: 5 },
     { name: "Tarangan complex II, Thane West", numberOfImages: 8 },
     { name: "Thane East", numberOfImages: 7 },
