@@ -58,7 +58,7 @@ export default function Contact() {
               <p className="text-sm opacity-80">We look forward to hearing from you!</p>
 
               <Image
-                  src={`/thankyou.png`}
+                  src={`/thankyou.webp`}
                   alt={`Thank you very much !`}
                   width={300}
                   height={150}
