@@ -86,7 +86,7 @@ export default function Home() {
 
             <button
               onClick={() => router.push("/services")}
-              className="border-2 max-w-[90%] text-base border-white my-10 rounded-full p-5 font-medium px-10 hover:bg-white hover:text-black transition-all hover:shadow-[10px_0px_120px_rgba(25,171,255,0.8)]"
+              className="border-2 max-w-[90%] text-base border-white my-10 rounded-full p-5 font-medium px-10 hover:bg-white hover:text-black transition-all hover:shadow-[0px_20px_80px_rgba(25,171,255,0.4)] hover:-translate-y-1 hover:scale-105"
             >
               <span className="flex flex-row items-center gap-4">
                 <span className="text-left text-pretty">

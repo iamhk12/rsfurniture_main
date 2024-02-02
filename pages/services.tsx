@@ -91,16 +91,16 @@ export default function Services() {
                   </div>
                 </div>
 
-                {/* Civil */}
-                <div className="flex items-center px-7 lg:rounded-sm mb-4 rounded-3xl lg:-ml-12 flex-row bg-gradient-to-r from-green-500 to-teal-700 shadow-[0px_30px_60px_rgba(75,192,192,0.22)] lg:h-36 py-7">
+                {/* Plumbing */}
+                <div className="flex items-center px-7 lg:rounded-sm mb-4 rounded-3xl lg:-ml-12 flex-row bg-gradient-to-r from-red-500 to-pink-700 shadow-[0px_30px_60px_rgba(239,68,68,0.22)] lg:h-36 py-7">
                   <div className="mr-4">
-                    <FaBuilding className="h-10 w-10 text-white" />
+                    <FaWrench className="h-10 w-10 text-white" />
                   </div>
                   <div>
-                    <p className="lg:text-2xl text-xl text-white mb-4">Civil Work</p>
+                    <p className="lg:text-2xl text-xl text-white mb-4">Plumbing Services</p>
                     <p className="text-white text-pretty text-sm">
-                      Benefit from our expertise in civil engineering, ensuring
-                      strong and reliable structures for your projects.
+                      Experience smooth water flow and drainage systems with our
+                      top-notch plumbing solutions.
                     </p>
                   </div>
                 </div>
@@ -119,16 +119,16 @@ export default function Services() {
                   </div>
                 </div>
 
-                {/* Plumbing */}
-                <div className="flex items-center px-7 lg:rounded-sm mb-4 rounded-3xl lg:-ml-12 flex-row bg-gradient-to-r from-red-500 to-pink-700 shadow-[0px_30px_60px_rgba(239,68,68,0.22)] lg:h-36 py-7">
+                 {/* Civil */}
+                 <div className="flex items-center px-7 lg:rounded-sm mb-4 rounded-3xl lg:-ml-12 flex-row bg-gradient-to-r from-green-500 to-teal-700 shadow-[0px_30px_60px_rgba(75,192,192,0.22)] lg:h-36 py-7">
                   <div className="mr-4">
-                    <FaWrench className="h-10 w-10 text-white" />
+                    <FaBuilding className="h-10 w-10 text-white" />
                   </div>
                   <div>
-                    <p className="lg:text-2xl text-xl text-white mb-4">Plumbing Services</p>
+                    <p className="lg:text-2xl text-xl text-white mb-4">Civil Work</p>
                     <p className="text-white text-pretty text-sm">
-                      Experience smooth water flow and drainage systems with our
-                      top-notch plumbing solutions.
+                      Benefit from our expertise in civil engineering, ensuring
+                      strong and reliable structures for your projects.
                     </p>
                   </div>
                 </div>

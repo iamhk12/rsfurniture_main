@@ -3,6 +3,8 @@ import { useRouter } from "next/router";
 
 export default function Contact() {
   const router = useRouter();
+  const phoneNumber = "+918779035327";
+  const emailId = "hkothari247@gmail.com"
 
   return (
     <>
@@ -34,18 +36,38 @@ export default function Contact() {
               </div>
             </nav>
 
-            <div className="lg:w-3/5 w-full">
-              <h2 className="text-2xl font-bold mb-4">Contact Information</h2>
+            <div className="lg:w-3/5 w-full bg-black text-white p-8 flex flex-col items-center shadow-lg" id="contactSection">
+              <h2 className="text-3xl font-extrabold mb-6 text-slate-300">Get in Touch</h2>
 
-              <p className="mb-2">
-                <strong>Phone:</strong> Your Phone Number
-              </p>
-              <p className="mb-2">
-                <strong>Email:</strong> your@email.com
-              </p>
+              <div className="mb-6 w-full flex justify-center">
+                <button 
+                  onClick={()=>{window.open('tel:'+phoneNumber)}}
+                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 lg:w-[350px] w-[90%]">
+                  <strong>Phone:</strong> {phoneNumber}
+                </button>
+              </div>
+
+              <div className="mb-8 w-full flex justify-center">
+                <button
+                  onClick={()=>{window.open('mailto:'+emailId);}}
+                  className="bg-green-500 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 lg:w-[350px] w-[90%]">
+                  <strong>Email:</strong> {emailId}
+                </button>
+              </div>
+
+              <p className="text-sm opacity-80">We look forward to hearing from you!</p>
+
+              <Image
+                  src={`/thankyou.png`}
+                  alt={`Thank you very much !`}
+                  width={300}
+                  height={150}
+                  layout="fixed"
+                  className="rounded-md "
+
+                />
             </div>
 
-            <div className="fixed w-full bottom-0 h-40 fixedTransparentGradient"></div>
           </div>
         </div>
       </div>

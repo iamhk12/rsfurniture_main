@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { FaArrowLeft, FaBackspace, FaBackward } from "react-icons/fa";
+import { BsArrowReturnRight } from "react-icons/bs";
 
 const Projects_Component = () => {
   const [selectedSite, setSelectedSite] = useState<any>(null);
@@ -38,8 +39,13 @@ const Projects_Component = () => {
     setSelectedSite(null)
   },[searchTerm])
 
+  const openImageInNewTab = (imageSrc : string) => {
+    window.open(imageSrc, '_blank');
+  };
+  
+
   return (
-    <div className="flex justify-center p-8">
+    <div className="flex justify-center lg:p-8 p-4">
       {!selectedSite && 
         <div className="lg:w-[80%] w-[90%] max-w-full">
           <div className="text-center mb-8">
@@ -58,7 +64,7 @@ const Projects_Component = () => {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" style={{marginTop : "50px"}}>
             {filteredSites.map((site, siteIndex) => (
-              <div key={siteIndex} className={`rounded-md overflow-hidden shadow-lg ${siteIndex === 0 ? 'w-full md:w-1/2' : ''}`}>
+              <div key={siteIndex} className={`rounded-md overflow-hidden shadow-lg mb-6 ${siteIndex === 0 ? 'w-full md:w-1/2' : ''}`}>
                 <div className="cursor-pointer" onClick={() => openPopup(site)}>
                   <div className="bg-lightgray h-40 relative">
                     <Image
@@ -70,9 +76,12 @@ const Projects_Component = () => {
                       style={{borderRadius : "3px"}}
                     />
                   </div>
-                  <div className="p-4">
-                    <h2 className="text-lg font-semibold text-gray-800">{site.name}</h2>
-                    <p className="text-gray-600">{`${site.numberOfImages} images`}</p>
+                  <div className=" flex" style={{padding : "20px 0px"}}>
+                    <span> <BsArrowReturnRight />  </span>
+                    <div className="ml-4">
+                      <h2 className="text-lg font-semibold text-gray-800">{site.name}</h2>
+                      <p className="text-gray-600">{`${site.numberOfImages} images`}</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -82,8 +91,8 @@ const Projects_Component = () => {
       }
 
       {selectedSite && (
-        <div className="flex items-center justify-center bg-gray-800 bg-opacity-75">
-          <div className="rounded-md overflow-hidden shadow-lg p-8 max-w-md">
+        <div className="flex items-center justify-center bg-gray-800 bg-opacity-75 scroll-smooth">
+          <div className="rounded-md overflow-hidden shadow-lg lg:p-8 p-2 max-w-md">
             <h2 className="text-2xl mb-4 font-bold text-gray-800">{selectedSite?.name}</h2>
             <button
               className="fixed top-0 rounded"
@@ -96,7 +105,9 @@ const Projects_Component = () => {
             </button>
             <div className="flex flex-col flex-wrap">
               {Array.from({ length: selectedSite?.numberOfImages }, (_, index) => (
-                <div key={index} className="flex items-center justify-center m-2" style={{margin : "2rem"}}>
+                <div key={index} className="flex items-center justify-center m-2 cursor-pointer" style={{margin : "2rem"}}
+                  onClick={() => openImageInNewTab(`/projects/${selectedSite?.name}/proj (${index + 1}).jpg`)}
+                  >
                   <Image
                     src={`/projects/${selectedSite?.name}/proj (${index + 1}).jpg`}
                     alt={`Project ${index + 1}`}
