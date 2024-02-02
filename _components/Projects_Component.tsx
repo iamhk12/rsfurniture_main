@@ -8,18 +8,18 @@ const Projects_Component = () => {
   const [searchTerm, setSearchTerm] = useState<string>("");
 
   const sites = [
-    { name: "Badminton court painting, Thane West", numberOfImages: 3 },
-    { name: "Kharghar", numberOfImages: 8 },
     { name: "Bhagwati Eleganza - Site 1, Ghansoli", numberOfImages: 16 },
-    { name: "Bhagwati Eleganza - Site 2, Ghansoli", numberOfImages: 19 },
-    { name: "Bhagwati Eleganza - Site 3, Ghansoli", numberOfImages: 19 },
     { name: "Lodha Amara, Thane West", numberOfImages: 12 },
+    { name: "Bhagwati Eleganza - Site 2, Ghansoli", numberOfImages: 19 },
+    { name: "Kharghar", numberOfImages: 8 },
     { name: "Neelkanth Palms, Thane West", numberOfImages: 5 },
     { name: "Panchavati Plaza, Ghansoli", numberOfImages: 10 },
     { name: "Parsik nagar, Kalwa", numberOfImages: 18 },
+    { name: "Bhagwati Eleganza - Site 3, Ghansoli", numberOfImages: 19 },
     { name: "Tarangan complex I, Thane West", numberOfImages: 5 },
     { name: "Tarangan complex II, Thane West", numberOfImages: 8 },
     { name: "Thane East", numberOfImages: 7 },
+    { name: "Badminton court painting, Thane West", numberOfImages: 3 },
   ];
 
   const filteredSites = sites.filter((site) =>
