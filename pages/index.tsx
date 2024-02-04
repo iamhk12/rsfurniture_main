@@ -175,7 +175,7 @@ export default function Home() {
                   story. Founded in year{" "}
                   <span className="text-slate-300 font-medium">1998</span> by{" "}
                   <span className="text-slate-300 font-medium">
-                    Ramsilan Yadav
+                    Shrichand Yadav
                   </span>
                   , we transform spaces into living narratives, crafting
                   artifacts that resonate with the poetry of life.
